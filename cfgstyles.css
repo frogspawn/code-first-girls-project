@@ -1,0 +1,22 @@
+body {
+	background-color: pink;
+}
+
+.col-sm-4 {
+	margin: 0 0 0 0;
+	padding: 180px 40px 180px 40px;
+	color: white;
+}
+
+#hamilton {
+	background-image: url(https://cdn-images-1.medium.com/max/800/1*qJnPOGdtk1q7dq17tx1aYg.gif);
+}
+
+#hopper {
+	background-image: url(https://s3.amazonaws.com/quotabelle/authors/grace-hopper/hopper-tech.jpg)
+}
+
+#lovelace {
+	background-image: url(https://s-media-cache-ak0.pinimg.com/originals/b7/2a/ee/b72aee00a4ffe86a8c57128d483e1203.jpg);
+}
+
