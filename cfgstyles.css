@@ -36,7 +36,16 @@ body {
 .description {
 	font-size: 25px;
 	background-color: black;
+	height: 150px;
+	opacity: 0;
+  transition: height .5s;
 }
+
+.show-description .description {
+	height: 150px;
+	opacity: 1;
+}
+
 
 #aboutus {
 	font-size: 100px
@@ -44,4 +53,4 @@ body {
 
 #about {
 	font-size: 25px
-}
+}    ASDFGH
