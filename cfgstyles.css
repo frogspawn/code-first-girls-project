@@ -2,10 +2,16 @@ body {
 	background-color: pink;
 }
 
+.navbar {
+	margin: 0 auto;
+	}
+
 .col-sm-4 {
 	margin: 0 0 0 0;
-	padding: 180px 40px 180px 40px;
+	padding: 170px 40px 170px 40px;
 	color: white;
+    background-size: cover;
+
 }
 
 #hamilton {
@@ -20,3 +26,22 @@ body {
 	background-image: url(https://s-media-cache-ak0.pinimg.com/originals/b7/2a/ee/b72aee00a4ffe86a8c57128d483e1203.jpg);
 }
 
+.name {
+	font-family: 'Diplomata SC', cursive;
+	color: pink;
+	font-size: 37px;
+
+}
+
+.description {
+	font-size: 25px;
+	background-color: black;
+}
+
+#aboutus {
+	font-size: 100px
+}
+
+#about {
+	font-size: 25px
+}
