@@ -4,62 +4,57 @@ body {
 
 .navbar {
 	margin: 0 auto;
+	 opacity: .7;
 	}
 
 .col-sm-4 {
+ 
+	color: black;
+	margin-top: 40px; 
+	padding-top: 20px;
+	align-content: center;
 
-	color: white;
+
 
 }
 
-img {
-	max-width: 100%;
-	margin: 0 0 0 0;
-	height:850px;
-	content: cover;
-	
-}
+.content {
 
-img:hover {
-	content: SOME TEXT BEETCH;
 }
-
-/*#hamilton {
-	background-image: url(https://cdn-images-1.medium.com/max/800/1*qJnPOGdtk1q7dq17tx1aYg.gif);
-}
-
-#hopper {
-	background-image: url(https://s3.amazonaws.com/quotabelle/authors/grace-hopper/hopper-tech.jpg)
-}
-
-#lovelace {
-	background-image: url(https://s-media-cache-ak0.pinimg.com/originals/b7/2a/ee/b72aee00a4ffe86a8c57128d483e1203.jpg);
-}
-*/
 .name {
 	font-family: 'Diplomata SC', cursive;
-	color: pink;
+	color: black;
 	font-size: 37px;
 
 }
 
-.description {
+
+
+
+#aboutheader {
+	font-size: 500px;
+		font-family: 'Diplomata SC', cursive;
+		text-align: left;
+		padding: 100px 100px 100px 100px;
+}
+
+#aboutdescription {
 	font-size: 25px;
-	height: 150px;
-	/*opacity: 0;
-  transition: height .5s;
-}
-/*
-.show-description .description {
-	height: 150px;
-	opacity: 1;
+		padding: 100px 100px 100px 100px;
 }
 
-
-#aboutus {
-	font-size: 100px
+#col-md-3 {
+	background-color: #1a000d;
 }
 
-#about {
-	font-size: 25px
-}    ASDFGH
+.carousel {
+	margin: 0 auto;
+	width: 300px;
+	height:250px;
+}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+     /* width: 70%;
+      margin: 0 auto;
+  }
+
