@@ -7,14 +7,24 @@ body {
 	}
 
 .col-sm-4 {
-	margin: 0 0 0 0;
-	padding: 170px 40px 170px 40px;
+
 	color: white;
-    background-size: cover;
 
 }
 
-#hamilton {
+img {
+	max-width: 100%;
+	margin: 0 0 0 0;
+	height:850px;
+	content: cover;
+	
+}
+
+img:hover {
+	content: SOME TEXT BEETCH;
+}
+
+/*#hamilton {
 	background-image: url(https://cdn-images-1.medium.com/max/800/1*qJnPOGdtk1q7dq17tx1aYg.gif);
 }
 
@@ -25,7 +35,7 @@ body {
 #lovelace {
 	background-image: url(https://s-media-cache-ak0.pinimg.com/originals/b7/2a/ee/b72aee00a4ffe86a8c57128d483e1203.jpg);
 }
-
+*/
 .name {
 	font-family: 'Diplomata SC', cursive;
 	color: pink;
@@ -35,12 +45,11 @@ body {
 
 .description {
 	font-size: 25px;
-	background-color: black;
 	height: 150px;
-	opacity: 0;
+	/*opacity: 0;
   transition: height .5s;
 }
-
+/*
 .show-description .description {
 	height: 150px;
 	opacity: 1;
