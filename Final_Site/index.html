@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme The Band</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;
+      font-size: 20px;
+      color: #9e7b7d;
+  }
+  .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #9e7b7d; <!-- border-->
+  }
+  .carousel-inner img {
+      -webkit-filter: grayscale(90%);
+      filter: grayscale(90%); /* make all photos black and white */
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+      background: #9e7b7d;
+      color: #d3d3d3;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #3dbeb9; <--! Turquoise -->
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #777;
+  }
+  /*#googleMap {
+      width: 100%;
+      height: 400px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+  }*/
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #3dbeb9;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #7b9fa5 !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #7b9fa5 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: lightgray !important;
+  }
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #3dbeb9;
+      text-decoration: none;
+  }
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+  </style>
+</head>
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">Women in Programming</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#programmers">WOMEN PROGRAMMERS</a></li>
+        <li><a href="#events">CODING EVENTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" <a href="Learn_to_code.html"> Learn to Code <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Learn_to_code.html">All</a></li>
+      			<li><a href="resources-python.html">Python</a></li>
+      			<li><a href="resources-html-css.html">HTML/CSS</a></li>
+      			<li><a href="resources-java.html">Java/JavaScipt</a></li>
+            <li><a href="Learn_to_code.html"> SQL</a></li>
+            <li<a href="Learn_to_code.html"> Ruby</a></li>
+            <li><a href="Learn_to_code.html"> C/C++</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="computer.jpg" alt="Computer" width="500" height="100">
+        <div class="carousel-caption">
+          <h3>Set Up</h3>
+          <p>Doesn't have to look geeky</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="computer2.jpg" alt="Computer" width="500" height="100">
+        <div class="carousel-caption">
+          <h3>Another Set Up!</h3>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Container (The Band Section) -->
+<div id="programmers" class="container text-center">
+  <h3>Women Programmers</h3>
+  <p><em>They helped build the web as we know it!</em></p>
+  <p>A computer programmer is a skilled professional who codes, tests, debugs,
+and maintains the comprehensive instructions known as computer programs or code that
+devices should follow to execute their functions. For those that don't know, code is a
+language in which computer programs, apps and websites are written. Just as there are many languages
+spoken around the world, there are also a variety of different programming languages. Historically,
+women in computing have had an effect on the evolution of the industry, with many of the first
+programmers during the early 20th century being female. Below are a few to name, but there are many more.</p>
+  <br>
+  <div class="row">
+   <div class="col-sm-4">
+     <p class="text-center"><strong>Admiral Grace Hopper</strong></p><br>
+     <a href="#demo" data-toggle="collapse">
+       <img src="Hopper.jpg" class="img-circle person" alt="Admiral Garce Hopper" width="255" height="255">
+     </a>
+     <div id="demo" class="collapse">
+       <p>One of the first programmers of the Harvard Mark I computer and invented the first compiler for a computer programming language</p>
+       <p>She popularized the idea of machine-independent programming languages, which led to the development of COBOL, one of the first high-level programming languages.</p>
+       <p>She has a Ph.D in Mathematics from Yale in 1934.</p>
+       <p> Visit <a href="http://www.amazingwomeninhistory.com/amazing-grace-hopper-computer-programmer/">here for more information about Admiral Grace Hooper</a>
+     </div>
+   </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Margaret Hamilton</strong></p><br>
+      <a href="#demo2" data-toggle="collapse"><img src="Hamilton.jpg" class="img-circle person" alt"Hamilton" width="255" height="255"></a>
+      <div id="demo2" class="collapse">
+            <p> Was Director of the Software Engineering Division of the MIT Instrumentation
+              Laboratory, which developed on-board flight software for the Apollo space program. </p>
+            <p> Founder and CEO of Hamiliton Technologies Inc. </p>
+            <p> Recieved the Presidential Medal of Freedom from Barack Obama in 2017. </p>
+            <p> Visit <a href="https://futurism.com/margaret-hamilton-the-untold-story-of-the-woman-who-took-us-to-the-moon/">here for more information about Margaret Hamilton</a>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Ada Lovelace</strong></p><br>
+      <a href="#demo3" data-toggle="collapse"><img src="lovelace.jpg" class="img-circle person" alt="Ada Lovelace" width="255" height="255"></a>
+      <div id="demo3" class="collapse">
+            <p> She was the first to recognise that the machine had applications beyond
+              pure calculation, and created the first algorithm intended to be carried out by such a machine </p>
+            <p> Known as the  first computer programmer. </p>
+            <p> Visit <a href="https://en.wikipedia.org/wiki/Ada_Lovelace">here for more information about Ada Lovelace</a>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Container (CODE EVENTS Section) -->
+  <div id="events" class="bg-1">
+    <div class="container">
+      <h3 class="text-center">Coding Events</h3>
+      <p class="text-center">Lorem ipsum we'll play you some music.<br> Remember to book your tickets!</p>
+
+      <ul class="list-group">
+        <li class="list-group-item">April 05 <a href="https://www.eventbrite.ie/e/all-aboard-2017-curious-about-coding-a-beginners-guide-to-code-tickets-32893585600?aff=es2">Curious About Coding: A beginner's guide to code</a> <span class="label label-danger">Sold Out!</span></li>
+        <li class="list-group-item">April 06 <a href="https://www.eventbrite.ie/e/everyone-can-code-how-coding-tansforms-lives-and-economies-tickets-32667245611?aff=es2">Everyone can code. How coding transforms lives</a><span class="label label-danger">Sold Out!</span></li>
+        <li class="list-group-item">April 24 <a href="https://www.codinggrace.com/events/wexford-html5-session/85/"> HTML Beginner Session</li></a>
+      </ul>
+
+      <div class="row text-center">
+
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img src="nci.jpg" alt="NCI, Dublin">
+            <p><strong>NCI, Dublin</strong></p>
+            <p>Wed. 05 April 2017</p>
+            <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img src="science_gallery.jpg" alt="Science Gallery">
+            <p><strong>Science Gallery, Dublin</strong></p>
+            <p>Thu. 06 April 2017</p>
+            <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img src="ccd.jpg" alt="Conference Centre Dublin">
+            <p><strong>Conference Centre, Dublin</strong></p>
+            <p>Mon. 24 April 2017</p>
+            <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, €10 per person</label>
+              <input type="number" class="form-control" id="psw" placeholder="How many?">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+              <button type="submit" class="btn btn-block">Pay
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p>Need <a href="#">help?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>If you have any questions, why not contact us!</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Question? Drop a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Dublin, IRL</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +353 86 1234567</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: womenprogrammers@gmail.com</p>
+    </div>
+
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <br>
+  <h3 class="text-center">From The Creators</h3>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Niamh Rigney</a></li>
+    <li><a data-toggle="tab" href="#menu1">Lahela Jones</a></li>
+    <li><a data-toggle="tab" href="#menu2">Georgia Burgess</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h2>Niamh Rigney</h2>
+      <p>Hi, I'm in 2nd Year Electronic and Communication Engineering. I took part in the Code First: Girls Courses
+      to help with my course.</p>
+    </div>
+
+    <div id="menu1" class="tab-pane fade">
+      <h2>Lahela Jones</h2>
+      <p>Hi! I'm a 2nd Year Culinary Arts Student. I took part in Code First: Girls course to learn something new.</p>
+    </div>
+
+    <div id="menu2" class="tab-pane fade">
+      <h2>Georgia Burgess</h2>
+      <p>I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
+    </div>
+
+  </div>
+
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Women in Programming</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
